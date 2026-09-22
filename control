@@ -1,9 +1,0 @@
-Package: com.user.autoonlinewallpaper
-Name: AutoOnlineWallpaper
-Version: 1.0
-Architecture: iphoneos-arm64 arm64e
-Description: 自动在线壁纸插件
-Maintainer: user
-Author: user
-Section: Tweaks
-Depends: mobilesubstrate, firmware (>=15.0)
