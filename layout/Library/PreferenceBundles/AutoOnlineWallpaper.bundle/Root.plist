@@ -1,1 +1,85 @@
 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<!-- 第一组：基本开关 -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>在线壁纸设置</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.user.autoonlinewallpaper</string>
+			<key>key</key>
+			<string>enable</string>
+			<key>label</key>
+			<string>启用插件</string>
+			<key>PostNotification</key>
+			<string>com.user.autoonlinewallpaper.settingschanged</string>
+		</dict>
+
+		<!-- 第二组：配置项（URL与时间间隔） -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>壁纸参数</string>
+			<key>footerText</key>
+			<string>请输入图片的直链地址，时间间隔单位为秒（建议不低于60秒）。</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.user.autoonlinewallpaper</string>
+			<key>key</key>
+			<string>url</string>
+			<key>label</key>
+			<string>图片直链:</string>
+			<key>placeholder</key>
+			<string>https://example.com/image.jpg</string>
+			<key>noAutoCorrect</key>
+			<true/>
+			<key>autocapitalizationType</key>
+			<integer>0</integer>
+			<key>PostNotification</key>
+			<string>com.user.autoonlinewallpaper.settingschanged</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.user.autoonlinewallpaper</string>
+			<key>key</key>
+			<string>interval</string>
+			<key>label</key>
+			<string>更换间隔(秒):</string>
+			<key>placeholder</key>
+			<string>300</string>
+			<key>keyboard</key>
+			<string>numbers</string>
+			<key>PostNotification</key>
+			<string>com.user.autoonlinewallpaper.settingschanged</string>
+		</dict>
+
+		<!-- 第三组：关于 -->
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>© 2026 AutoOnlineWallpaper</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>自动在线壁纸</string>
+</dict>
+</plist>
