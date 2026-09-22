@@ -1,0 +1,9 @@
+Package: com.user.autoonlinewallpaper
+Name: AutoOnlineWallpaper
+Version: 1.0
+Architecture: iphoneos-arm64 arm64e
+Description: Auto online wallpaper switch for RootHide
+Maintainer: user
+Author: user
+Section: Tweaks
+Depends: mobilesubstrate, firmware (>=15.0), com.roothide.bootstrap (>=1.0.0), ellekit, preferenceloader
