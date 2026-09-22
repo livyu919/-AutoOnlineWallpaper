@@ -1,0 +1,23 @@
+name: Build Tweak
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: theos/build-action@v2
+        with:
+          sdk: 17.0
+
+      - name: Build deb package
+        run: make package FINALPACKAGE=1
+
+      - name: Upload deb artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AutoOnlineWallpaper-RootHide
+          path: packages/*.deb
