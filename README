@@ -1,0 +1,18 @@
+# AutoOnlineWallpaper 2.0 (RootHide)
+
+针对 RootHide Bootstrap + ElleKit 的 Theos tweak 源码。目标为 iOS 17.0–17.3.1，使用 `THEOS_PACKAGE_SCHEME=roothide` 打包。
+
+## 壁纸来源
+- `bing`：Bing 每日壁纸
+- `unsplash`：Unsplash Random Photo API，需要 Access Key
+- `custom`：自定义图片直链，或返回 `url` / `image_url` / `image` 字段的 JSON API
+- `local`：本地图片完整路径
+
+## 设置
+设置中打开 AutoOnlineWallpaper。来源类型填写上述英文值。解锁自动更换默认延迟 2 秒；定时更换间隔设置为 0 表示关闭。
+
+## 编译
+GitHub Actions 可手动运行：Actions → Build AutoOnlineWallpaper → Run workflow。也可在 Theos 环境执行：
+
+```sh
+make clean package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=roothide
