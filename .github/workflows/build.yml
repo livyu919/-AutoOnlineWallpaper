@@ -1,5 +1,24 @@
-name: Build AutoOnlineWallpaper
-
+name: Build Tweak
 on:
   push:
-  workflow_dispatch:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Theos
+        uses: Randomblock1/theos-action@main
+        with:
+          theos-sdks: 17.0
+
+      - name: Build package (RootHide)
+        run: make package THEOS_PACKAGE_SCHEME=roothide FINALPACKAGE=1
+
+      - name: Upload deb artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: AutoOnlineWallpaper-deb
+          path: packages/*.deb
