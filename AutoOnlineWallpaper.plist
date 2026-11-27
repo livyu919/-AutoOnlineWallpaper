@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>Filter</key>
-	<dict>
-		<key>Bundles</key>
-		<array>
-			<string>com.apple.springboard</string>
-		</array>
-	</dict>
-</dict>
-</plist>
+<plist version="1.0"><dict>
+  <key>Filter</key><dict>
+    <key>Bundles</key><array><string>com.apple.springboard</string></array>
+  </dict>
+</dict></plist>
+```[span_4](start_span)[span_4](end_span)
+
+### 2. 系统“设置”入口注册（`layout/Library/PreferenceLoader/Preferences/AutoOnlineWallpaper.plist`）
+在系统“设置”里注册 `AutoOnlineWallpaper` 入口，点击后加载 `AutoOnlineWallpaperPrefs` 设置面板[span_5](start_span)[span_5](end_span)[span_6](start_span)[span_6](end_span)：
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+  <key>entry</key><dict>
+    <key>bundle</key><string>AutoOnlineWallpaperPrefs</string>
+    <key>cell</key><string>PSLinkCell</string>
+    <key>label</key><string>AutoOnlineWallpaper</string>
+  </dict>
+</dict></plist>
+```[span_7](start_span)[span_7](end_span)
+
+http://googleusercontent.com/lmdx_content/OVUVATGZdUMUxgrucbAkLvAolomHtiiaClCKnfwwycvVcAJoumywNFSetaoYQECzTAkDrNwcJiSqOEDKsbUCfNjxCnqXbcXLefdkdntMJNJZMTiDrMynBvXJxuKTVrxFamZGtyZvwZJfbZzHtfDBDBxACfCNTVnIVqzRsMMvESnaaUZKrXIlikovNeSqIKIVOOeNYSwcJQAToHrUpndYEZnZXNHjVklPJepOGXwtIibrGBSjdllKMtWfvyRrLlGTKGTDsIkIXtdZD568276
