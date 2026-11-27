@@ -7,3 +7,10 @@
     <key>label</key><string>AutoOnlineWallpaper</string>
   </dict>
 </dict></plist>
+```[span_2](start_span)[span_2](end_span)
+
+* **`bundle`**：指向偏好设置 Bundle 名称 `AutoOnlineWallpaperPrefs`[span_3](start_span)[span_3](end_span)[span_4](start_span)[span_4](end_span)。
+* **`cell`**：使用 `PSLinkCell`，点击后跳转进入对应的设置子页面[span_5](start_span)[span_5](end_span)。
+* **`label`**：在系统“设置”列表里显示的条目名称为 `AutoOnlineWallpaper`[span_6](start_span)[span_6](end_span)。
+
+http://googleusercontent.com/lmdx_content/QcAomOjENWebPJLuHXOyrpyjTYalWbwirtazrccIdPKzwbcePwCeaQCbGHtWhTGDvEfmoVeeBvIGOofthfWuBhakBhswKRcDyaMNuwqiGpPRgyXJNYtdwzwcRyenOZcVIfhRFrEoKCGlQMUsNKZMwsWAgQbacTfvGUnumpAIvVwKWgoIaYNdMgWeqSNqEQVaWHEaBglikjCRejfaibdLWdvrnXNOYZkFAZNBcqWmfnmGIvELBwHXcRxmQHisnOnmOMhgPLkSMOSVvT738268
